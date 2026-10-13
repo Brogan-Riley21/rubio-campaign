@@ -1501,6 +1501,15 @@ img {
   text-align: center;
 }
 
+.footer-motto {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
 .footer-logo {
   margin: 0 0 0.75rem;
   font-size: 1rem;
