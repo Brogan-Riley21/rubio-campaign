@@ -590,6 +590,7 @@ img {
 [id="about"],
 [id="vision"],
 [id="platform"],
+[id="endorsements"],
 [id="trail"],
 [id="involved"],
 .policy-card[id] {
@@ -1028,6 +1029,151 @@ img {
   margin-top: 0.5rem;
 }
 
+.policy-stat {
+  margin: 0 0 0.85rem;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--navy);
+  background: var(--bg);
+  border-left: 3px solid var(--red);
+  border-radius: 0 6px 6px 0;
+}
+
+.policy-record {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #475569;
+  border-top: 1px dashed var(--border);
+}
+
+.policy-record strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--navy);
+  font-size: 0.8125rem;
+}
+
+.platform-sources {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.35rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--slate);
+}
+
+.platform-sources h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.platform-sources p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.platform-sources a {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.endorsements {
+  background: var(--bg);
+}
+
+.endorsement-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .endorsement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .endorsement-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.endorse-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.endorse-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--navy);
+}
+
+.endorse-card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.endorse-card--highlight {
+  border-color: rgba(185, 28, 28, 0.35);
+  background: linear-gradient(180deg, #fff 0%, #fef2f2 100%);
+}
+
+@media (min-width: 960px) {
+  .endorse-card--highlight {
+    grid-column: span 2;
+  }
+}
+
+.endorse-cite {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--red);
+}
+
+.endorse-cite:hover {
+  text-decoration: underline;
+}
+
+.joint-events {
+  margin-top: 2rem;
+  padding: 1.35rem 1.5rem;
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.88);
+  border-radius: 8px;
+}
+
+.joint-events h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--white);
+}
+
+.joint-events p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
 .trail {
   background: var(--white);
 }
@@ -1276,8 +1422,15 @@ img {
 
 @media (min-width: 768px) {
   .footer-columns {
-    grid-template-columns: 1fr 1fr 1.4fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-columns {
+    grid-template-columns: 1fr 1fr 0.85fr 1.35fr;
+    gap: 2rem;
   }
 }
 
